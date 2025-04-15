@@ -113,9 +113,12 @@ ngrok http 8000
 This gives you a public link like:
 
 https://abc123.ngrok.io/query
+
 👋 Author
 Divya Tripathi
+
 2nd Year B.Tech CSE Student @ SRM University
+
 Passionate about AI, Machine Learning, and solving real-world problems with code ❤️
 
 📝 License
