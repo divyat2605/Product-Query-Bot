@@ -1,5 +1,5 @@
 # Product-Query-Bot
-# 🧠 Product Query Bot using Semantic Search & Gemini Pro
+# 🧠 Product Query Bot using Semantic Search 
 
 This project is a smart chatbot that helps users get product recommendations from a dataset using meaningful search (semantic search), rather than keyword matching. It processes a list of products, understands user questions, and fetches relevant information using AI.
 
