@@ -18,6 +18,7 @@ This project is a smart chatbot that helps users get product recommendations fro
 Make sure Python 3.8 or above is installed. Then run:
 
 pip install -r requirements.txt
+
 Required packages include:
 
 fastapi
@@ -34,6 +35,7 @@ pyngrok
 
 You can also install them manually:
 pip install fastapi uvicorn google-generativeai faiss-cpu sentence-transformers pyngrok
+
 3. Get Your Gemini API Key
 Go to Google AI Studio
 
