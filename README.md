@@ -68,7 +68,7 @@ POST http://127.0.0.1:8000/query
 Content-Type: application/json
 
 {
-  "query": "Show me phones with great cameras"
+  "query": "Show me phones with great cameras"  ##Query is subjective to the product details provided
 }
 Sample Response:
 
