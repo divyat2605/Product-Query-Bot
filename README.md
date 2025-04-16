@@ -1,7 +1,7 @@
 # Product-Query-Bot
 # 🧠 Product Query Bot using Semantic Search 
 
-This project is a smart chatbot that helps users get product recommendations from a dataset using meaningful search (semantic search), rather than keyword matching. It processes a list of products, understands user questions, and fetches relevant information using AI.
+This project is a smart chatbot that helps users get product details from a dataset using meaningful search (semantic search), rather than keyword matching. It processes a list of products, understands user questions, and fetches relevant information using AI.
 
 ---
 
@@ -34,7 +34,7 @@ sentence-transformers
 pyngrok
 
 You can also install them manually:
-pip install fastapi uvicorn google-generativeai faiss-cpu sentence-transformers pyngrok
+pip install fastapi uvicorn google-generativeai faiss-cpu sentence-transformers pyngrok.
 
 3. Get Your Gemini API Key
 Go to Google AI Studio
@@ -46,6 +46,7 @@ Then, set it in your code (main.py) like this:
 python
 
 GOOGLE_API_KEY = "your-api-key-here"
+or if you are running on colab either you can hard code them or use an environmental variable. 
 🧪 How to Run the App
 Step 1: Start the Server
 
@@ -77,6 +78,23 @@ Sample Response:
   "answer": "Based on the information, the products that match your query are product IDs: 0, 1",
   "product_ids": [0, 1]
 }
+Or, another approach could be you use the curl command. 
+It lets you send requests to web servers and see their responses directly from the command line or script.
+It can be used to call API's as well,as done here.
+Sample:
+
+curl -X POST https://example.com/api \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Which product has LED lights?"}
+
+This sends json query to the server and get a response.
+Response:
+{
+  "product_id": "P103",
+  "name": "ZenTunes Speaker",
+  "features": "360° sound, LED lights, 10-hour battery life"
+}
+
 🧩 Design Decisions 
 1. Chunking Strategy
 We break long text into small pieces (chunks) of 200 characters with an overlap of 30 characters. This helps preserve meaning when we cut the data and ensures we don’t lose context between chunks.
